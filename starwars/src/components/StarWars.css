@@ -10,13 +10,17 @@ h3 {
 
 strong {
     font-family: 'Audiowide', cursive;
+    font-size: 18px;
 }
 
 .char-stats {
     margin: 20px;
     padding: 5px;
+    border-radius: 10px;
     background-color: #eaeaea;
+    opacity: 0.9;
     width: 400px;
     height: 200px;
     text-align: center;
+    font-family: 'Audiowide', cursive;
 }

@@ -1,3 +1,9 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
 .App {
   text-align: center;
 }
@@ -6,3 +12,10 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.sw-char {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}

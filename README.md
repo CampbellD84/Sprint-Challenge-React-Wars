@@ -26,11 +26,19 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+ReactJS is a library, built in JavaScript, used to build out User Interfaces via Components.  React tries to solve the problem of handling complex state(data). For example, apps like Twitter, Facebook, etc that need to deal with quickly changing data such as Status updates, Tweets, Likes and make sure the user is getting the most current and up to date information.  React also tries to alleviate a lot of the work the DOM has to do.  It does this by only updating what has changed and ignoring or not altering what hasn't changed. This is called the Virtual DOM. React also gives you the ability to reuse Components so you don't have to build things repeatedly.
+
 - [ ] What does it mean to _think_ in react?
+
+To 'think' in React is to take the User Interface and break it down into smaller pieces until each component is doing one and only one thing. You have to decide whether a component owns and needs to mutate state or if it takes in props and doesn't and isn't able to change state. You also have to decide if the data is to flow from top to bottom or from the bottom to top.
 
 - [ ] Describe state.
 
+State is data that can be passed around to other components and held onto.  When state updates, the components will also update. State is mutable(can be changed) by using the setState special function only.
+
 - [ ] Describe props.
+
+Props are how state is passed around. Components receive data through props. Functional components receive props via an object passed as a argument.  Props are immutable(cannot be changed), read-only. Passed around from top to bottom or vice-versa using event handlers. Components cannot modify own props because functions and classes in React are 'pure' functions. Pure functions are functions that take in arguments/params and return them without altering them.
 
 ## Project Set Up
 
